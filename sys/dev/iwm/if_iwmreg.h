@@ -5385,7 +5385,7 @@ struct iwm_scan_offload_req {
 	struct iwm_scan_offload_schedule schedule_line[2];
 } __packed;
 
-enum iwm_scan_offload_compleate_status {
+enum iwm_scan_offload_complete_status {
 	IWM_SCAN_OFFLOAD_COMPLETED	= 1,
 	IWM_SCAN_OFFLOAD_ABORTED	= 2,
 };
@@ -5416,7 +5416,7 @@ struct iwm_lmac_scan_complete_notif {
  * iwm_scan_offload_complete - IWM_SCAN_OFFLOAD_COMPLETE_NTF_API_S_VER_1
  * @last_schedule_line:		last schedule line executed (fast or regular)
  * @last_schedule_iteration:	last scan iteration executed before scan abort
- * @status:			enum iwm_scan_offload_compleate_status
+ * @status:			enum iwm_scan_offload_complete_status
  */
 struct iwm_scan_offload_complete {
 	uint8_t last_schedule_line;
